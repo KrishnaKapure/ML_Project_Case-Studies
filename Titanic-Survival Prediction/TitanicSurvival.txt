@@ -5,7 +5,7 @@ It also includes data visualization and exploratory data analysis (EDA) to under
 📂 Project Structure
 
 ├── TitanicDataset.csv            # Input dataset
-├── titanic_logistic.py           # Python script containing the model
+├── TitanicSurvival.py           # Python script containing the model
 ├── README.md                     # Project documentation
 ├── *.png                         # Generated visualization images
 📌 Features
@@ -79,3 +79,4 @@ Age report.png
 Fare report.png
 
 Feature Correlation Heatmap.png
+
