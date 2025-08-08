@@ -1,0 +1,74 @@
+🍷 Wine Classification using K-Nearest Neighbors (KNN)
+This project implements a K-Nearest Neighbors (KNN) classification model to predict the type of wine based on its chemical properties.
+It includes data preprocessing, model tuning (finding best k), and visualization of accuracy scores for different k values.
+
+📂 Project Structure
+
+├── WinePredictor.csv               # Input dataset
+├── wine_predictor.py               # Python script containing the code
+├── Accuracy vs K value.png         # Accuracy plot output
+├── README.md                       # Project documentation
+📌 Features
+Data Cleaning
+
+Removes missing values with dropna()
+
+Data Preprocessing
+
+Separates features (x) and target (y)
+
+Standardizes features using StandardScaler
+
+Model Training & Evaluation
+
+Tests KNN for k values from 1 to 20
+
+Tracks and stores accuracy for each k
+
+Finds the best k value that yields highest accuracy
+
+Evaluates final model with accuracy score and confusion matrix
+
+Visualization
+
+Line plot showing Accuracy vs K values
+
+Saved as Accuracy vs K value.png
+
+🛠 Requirements
+Install the required Python libraries:
+
+pip install pandas numpy matplotlib scikit-learn
+🚀 How to Run
+Place the dataset WinePredictor.csv in the project directory.
+
+Run the script:
+
+
+python wine_predictor.py
+The program will:
+
+Clean and scale the dataset
+
+Test multiple k values for KNN
+
+Plot and save Accuracy vs K graph
+
+Print the best k value, accuracy, and confusion matrix
+
+📊 Example Output
+Console Output:
+
+Best value of k is :  6
+Final best accuracy is :  98.61
+[[15  0  0]
+ [ 0 13  1]
+ [ 0  0 16]]
+Generated Plot:
+
+Accuracy vs K value.png – Shows model accuracy for k = 1 to 20.
+
+📌 Notes
+Standardizing data is important for KNN since it’s distance-based.
+
+we can change random_state in train_test_split for different train/test splits.
