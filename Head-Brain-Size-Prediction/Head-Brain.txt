@@ -1,0 +1,95 @@
+Head Size vs Brain Weight – Linear Regression
+This project implements a Linear Regression model to analyze the relationship between head size and brain weight.
+The program performs data exploration, model training, evaluation, and visualization of the regression line.
+
+📂 Project Structure
+
+├── HeadBrain.csv                      # Input dataset
+├── head_brain_linear.py               # Python script containing the code
+├── Head Brain Regression.png          # Visualization output
+├── README.md                          # Project documentation
+
+📌 Features
+
+Data Exploration
+
+Displays first few records of the dataset
+
+Shows descriptive statistics (mean, std, min, max, etc.)
+
+Data Preprocessing
+
+Splits the data into independent variable (Head Size) and dependent variable (Brain Weight)
+
+Splits the dataset into training (80%) and testing (20%) sets
+
+Model Training
+
+Uses Linear Regression from scikit-learn
+
+Fits the model on the training dataset
+
+Model Evaluation
+
+Mean Squared Error (MSE)
+
+Root Mean Squared Error (RMSE)
+
+R² Score (coefficient of determination)
+
+Visualization
+
+Scatter plot of actual test data
+
+Regression line overlayed on the plot
+
+Saved as Head Brain Regression.png
+
+🛠 Requirements
+Install the required Python libraries before running the script:
+
+pip install pandas numpy matplotlib scikit-learn
+🚀 How to Run
+Place the dataset (HeadBrain.csv) in the project directory.
+
+Run the script:
+
+python HeadBrain.py
+The program will:
+
+Print dataset info and statistics
+
+Train the regression model
+
+Display and save the regression plot
+
+Print model evaluation metrics
+
+📊 Example Output
+Console Output:
+
+**************************************************
+First few records of the dataset are:
+**************************************************
+   Head Size(cm^3)  Brain Weight(grams)
+0             4512                 1530
+1             3738                 1297
+...
+**************************************************
+Statistical information of the dataset:
+**************************************************
+       Head Size(cm^3)  Brain Weight(grams)
+count        237.00000           237.000000
+mean        3633.99156          1282.873418
+...
+Independent variables are : Head Size
+Dependent variables are : Brain Weight
+Total records in dataset :  (237, 1)
+Dimensions of Training dataset :  (189, 1)
+Dimensions of Testing dataset :  (48, 1)
+Mean Squared Error is :  12345.67
+Root Mean Squared Error is :  111.11
+R Square Value :  0.639
+Generated Visualization:
+
+Head Brain Regression.png – Scatter plot of actual values vs predicted regression line.
