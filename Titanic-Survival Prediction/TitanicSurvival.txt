@@ -43,9 +43,6 @@ Place the dataset (TitanicDataset.csv) in the project directory.
 
 Run the script:
 
-bash
-Copy
-Edit
 python titanicSurvival.py
 The program will:
 
@@ -82,8 +79,3 @@ Age report.png
 Fare report.png
 
 Feature Correlation Heatmap.png
-
-📌 Notes
-Ensure the dataset column names match the script expectations.
-
-You can tweak the model or preprocessing steps to improve accuracy.
