@@ -5,7 +5,7 @@ The program performs data exploration, model training, evaluation, and visualiza
 📂 Project Structure
 
 ├── HeadBrain.csv                      # Input dataset
-├── head_brain_linear.py               # Python script containing the code
+├── HeadBrain.py               # Python script containing the code
 ├── Head Brain Regression.png          # Visualization output
 ├── README.md                          # Project documentation
 
@@ -93,3 +93,4 @@ R Square Value :  0.639
 Generated Visualization:
 
 Head Brain Regression.png – Scatter plot of actual values vs predicted regression line.
+
