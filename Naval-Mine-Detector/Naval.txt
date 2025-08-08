@@ -37,7 +37,6 @@ The dataset contains **60 numeric features** representing energy measurements of
 
 Install dependencies:
 
-```bash
 pip install numpy pandas matplotlib scikit-learn tensorflow==1.15
 
 
@@ -91,6 +90,7 @@ Model training & evaluation
 Loss and accuracy visualization
 
 Model persistence (saving & restoring)
+
 
 
 
