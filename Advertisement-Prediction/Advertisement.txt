@@ -1,0 +1,96 @@
+## 📊 Dataset Information
+
+The dataset `Advertising.csv` contains the following columns:
+
+| Column Name | Description |
+|-------------|-------------|
+| Unnamed: 0  | Row index (removed during preprocessing) |
+| TV          | Advertising budget spent on TV (in thousands) |
+| radio       | Advertising budget spent on Radio (in thousands) |
+| newspaper   | Advertising budget spent on Newspaper (in thousands) |
+| sales       | Sales achieved (in thousands of units) |
+
+---
+
+## 🚀 Features
+
+- **Data Cleaning**
+  - Removes unnecessary columns
+  - Checks for missing values
+- **Exploratory Data Analysis**
+  - Statistical summary
+  - Correlation matrix
+  - Heatmap visualization
+  - Pairplot visualization
+- **Model Training**
+  - Multiple Linear Regression with TV, Radio, Newspaper as features
+- **Model Evaluation**
+  - Mean Squared Error (MSE)
+  - Root Mean Squared Error (RMSE)
+  - R² Score
+- **Visualization**
+  - Actual vs Predicted Sales scatter plot
+
+---
+
+## 🛠 Requirements
+
+Install the required Python libraries before running the script:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+📌 How to Run
+Place the Advertising.csv file in the same directory as the script.
+
+Run the Python script:
+
+python Advertisement.py
+The program will:
+
+Print dataset summary and statistics
+
+Show visualizations (heatmap, pairplot, scatter plot)
+
+Train a regression model
+
+Display performance metrics
+
+⚙️ Model Details
+Algorithm: Multiple Linear Regression
+
+Features: TV, Radio, Newspaper
+
+Target: Sales
+
+Test Split: 20% of dataset for testing
+
+📈 Example Output
+
+Mean Squared Error :  1.226
+Root Mean Squared Error :  1.107
+R Square :  0.897
+Model Coefficient are :
+TV : 0.045
+radio : 0.189
+newspaper : -0.001
+Y Intercept is  2.938
+Visuals Produced:
+
+Correlation Heatmap
+
+Pairplot
+
+Actual vs Predicted Scatter Plot
+
+📚 Concepts Covered
+Multiple Linear Regression
+
+Data preprocessing
+
+Correlation analysis
+
+Regression evaluation metrics
+
+Data visualization with Matplotlib & Seaborn
+
+
