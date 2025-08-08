@@ -37,7 +37,6 @@ The dataset `Advertising.csv` contains the following columns:
 
 Install the required Python libraries before running the script:
 
-```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 📌 How to Run
 Place the Advertising.csv file in the same directory as the script.
@@ -92,5 +91,6 @@ Correlation analysis
 Regression evaluation metrics
 
 Data visualization with Matplotlib & Seaborn
+
 
 
