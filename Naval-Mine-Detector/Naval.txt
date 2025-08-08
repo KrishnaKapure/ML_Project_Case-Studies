@@ -1,0 +1,96 @@
+ 📊 Dataset Information
+
+The dataset contains **60 numeric features** representing energy measurements of sonar signals at different frequencies, and **1 target label**:
+
+| Column(s)     | Description |
+|---------------|-------------|
+| 0-59          | Sonar signal attributes (floating-point values) |
+| Label         | Target label: `M` for Mine, `R` for Rock |
+
+---
+
+ 🚀 Features
+
+- **Data Preprocessing**
+  - Reads CSV dataset using Pandas
+  - Encodes categorical target labels (`M` and `R`) into one-hot format
+  - Shuffles and splits data into training and test sets
+- **Neural Network Architecture**
+  - 4 hidden layers (each with ReLU activation)
+  - Configurable number of neurons per layer
+  - Output layer with Softmax activation
+- **Training**
+  - Uses Gradient Descent Optimizer
+  - Tracks cost (loss) and accuracy over epochs
+- **Evaluation**
+  - Calculates Mean Squared Error (MSE)
+  - Reports final test accuracy
+- **Visualization**
+  - Plots accuracy history
+  - Plots loss (cost) over training epochs
+- **Model Saving**
+  - Saves trained model using TensorFlow's `Saver`
+
+---
+
+ 🛠 Requirements
+
+Install dependencies:
+
+```bash
+pip install numpy pandas matplotlib scikit-learn tensorflow==1.15
+
+
+
+📌 How to Run
+Place Navalminesonar.csv in the same directory as the script.
+
+Run the script:
+
+python Navalmine.py
+The program will:
+
+Load and preprocess the dataset
+
+Train the MLP model
+
+Display loss & accuracy graphs
+
+Save the trained model to the ModelFlow file
+⚙️ Model Parameters
+Parameter	Value
+Learning rate	0.3
+Training epochs	1000
+Hidden layer neurons	60 per layer
+Test split	30%
+Optimizer	Gradient Descent
+
+📈 Example Output
+
+Epoch: 0, Cost: 1.0486, Train Accuracy: 0.5333
+Epoch: 100, Cost: 0.2394, Train Accuracy: 0.9166
+Epoch: 200, Cost: 0.1481, Train Accuracy: 0.9333
+
+Training complete.
+Model saved in file: ModelFlow
+Mean Squared Error: 0.0725
+Test Accuracy: 0.8846
+Graphs Generated:
+
+Accuracy history plot
+
+Loss calculation plot
+
+📚 Concepts Covered
+Data preprocessing & one-hot encoding
+
+Feed-forward neural networks with TensorFlow v1
+
+Model training & evaluation
+
+Loss and accuracy visualization
+
+Model persistence (saving & restoring)
+
+
+

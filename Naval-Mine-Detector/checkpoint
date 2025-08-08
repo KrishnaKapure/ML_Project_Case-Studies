@@ -1,0 +1,2 @@
+model_checkpoint_path: "ModelFlow"
+all_model_checkpoint_paths: "ModelFlow"
