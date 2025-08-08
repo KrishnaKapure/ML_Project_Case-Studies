@@ -1,0 +1,89 @@
+Titanic Survival Prediction – Logistic Regression
+This project implements a Logistic Regression model to predict passenger survival on the Titanic based on various features such as age, gender, class, fare, and embarkation point.
+It also includes data visualization and exploratory data analysis (EDA) to understand patterns in survival.
+
+📂 Project Structure
+
+├── TitanicDataset.csv            # Input dataset
+├── titanic_logistic.py           # Python script containing the model
+├── README.md                     # Project documentation
+├── *.png                         # Generated visualization images
+📌 Features
+Data Cleaning
+
+Removes unnecessary columns (Passengerid, zero)
+
+Fills missing Embarked values with the mode
+
+Data Visualization (Saved as .png files)
+
+Survival count (overall, by gender, by passenger class)
+
+Age distribution
+
+Fare distribution
+
+Feature correlation heatmap
+
+Machine Learning Model
+
+Uses Logistic Regression
+
+Data scaled using StandardScaler
+
+Model evaluated with accuracy score and confusion matrix
+
+🛠 Requirements
+Install the required Python libraries before running the script:
+
+
+pip install pandas numpy matplotlib seaborn scikit-learn
+🚀 How to Run
+Place the dataset (TitanicDataset.csv) in the project directory.
+
+Run the script:
+
+bash
+Copy
+Edit
+python titanicSurvival.py
+The program will:
+
+Display the dataset’s shape and head
+
+Generate and save EDA plots as .png files
+
+Train and test the Logistic Regression model
+
+Print accuracy and confusion matrix in the console
+
+📊 Output Example
+Console Output:
+
+
+Dataset loaded successfully:
+Survived  Pclass  Sex  Age  ...
+Dimensions of dataset is: (891, 12)
+Dimensions after cleaning: (891, 10)
+Accuracy is:  0.81
+Confusion matrix:
+[[99 14]
+ [18 48]]
+Generated Visualizations:
+
+Survived vs Non Survived.png
+
+Based on gender.png
+
+Based on Pclass.png
+
+Age report.png
+
+Fare report.png
+
+Feature Correlation Heatmap.png
+
+📌 Notes
+Ensure the dataset column names match the script expectations.
+
+You can tweak the model or preprocessing steps to improve accuracy.
