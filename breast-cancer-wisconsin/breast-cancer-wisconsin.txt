@@ -1,6 +1,5 @@
 Breast Cancer Classification using Random Forest & Pipeline
 
-
 This project demonstrates an end-to-end machine learning pipeline for predicting breast cancer diagnosis
 (Benign vs Malignant) using the Breast Cancer Wisconsin dataset.
  
@@ -13,13 +12,10 @@ It follows industrial best practices by:
 •	Providing data visualization for interpretability
 
 Dependencies
-
 Install the required Python packages before running the project:
-
 pip install pandas numpy matplotlib scikit-learn joblib
 
 Dataset Information
-
 Source: UCI Machine Learning Repository - Breast Cancer Wisconsin Dataset
 Features (10):
 1.	ClumpThickness
@@ -31,13 +27,13 @@ Features (10):
 7.	BlandChromatin
 8.	NormalNucleoli
 9.	Mitoses
+
 Target:
 •	2 = Benign
 •	4 = Malignant
 
 
 Workflow
-
  Data Preparation
 
  • Convert raw .data file to .csv with headers
@@ -57,7 +53,6 @@ Workflow
  • Load model for future predictions without retraining
 
 Running the Project
-
  Prepare CSV (Only Once)
 
  from breast_cancer_pipeline import data_file_to_csv
@@ -103,7 +98,5 @@ Loaded model prediction for first test sample: 2
  print("Prediction:", pred[0])  # 2 (Benign) or 4 (Malignant)
 
  Author
-
  Krishna Kapure
-
-  Date: 09/08/2025
+ Date: 09/08/2025
