@@ -1,0 +1,109 @@
+Breast Cancer Classification using Random Forest & Pipeline
+
+
+This project demonstrates an end-to-end machine learning pipeline for predicting breast cancer diagnosis
+(Benign vs Malignant) using the Breast Cancer Wisconsin dataset.
+ 
+It follows industrial best practices by:
+
+•	Automating preprocessing with Pipelines
+•	Handling missing values using SimpleImputer
+•	Using Random Forest Classifier as a robust baseline
+•	Saving & loading trained models using Joblib
+•	Providing data visualization for interpretability
+
+Dependencies
+
+Install the required Python packages before running the project:
+
+pip install pandas numpy matplotlib scikit-learn joblib
+
+Dataset Information
+
+Source: UCI Machine Learning Repository - Breast Cancer Wisconsin Dataset
+Features (10):
+1.	ClumpThickness
+2.	UniformityCellSize
+3.	UniformityCellShape
+4.	MarginalAdhesion
+5.	SingleEpithelialCellSize
+6.	BareNuclei
+7.	BlandChromatin
+8.	NormalNucleoli
+9.	Mitoses
+Target:
+•	2 = Benign
+•	4 = Malignant
+
+
+Workflow
+
+ Data Preparation
+
+ • Convert raw .data file to .csv with headers
+ • Replace missing values (?) with NaN
+ • Ensure numeric type conversion for all feature columns
+ Train-Test Split
+ • Split into 70% train and 30% test
+ • Use stratified sampling to preserve class balance
+ Pipeline Construction
+ • Step 1: SimpleImputer(strategy="median") for missing value handling
+ • Step 2: RandomForestClassifier with 300 estimators for classification
+ Model Training & Evaluation
+ • Metrics: Accuracy, Confusion Matrix, Classification Report
+ • Feature Importance Plot: Shows most influential features
+ Model Saving & Loading
+ • Save model with Joblib
+ • Load model for future predictions without retraining
+
+Running the Project
+
+ Prepare CSV (Only Once)
+
+ from breast_cancer_pipeline import data_file_to_csv
+ data_file_to_csv()
+
+ Train & Evaluate Model
+
+ python breast_cancer_pipeline.py
+ Expected output:
+
+ Train Accuracy ::  1.0
+Test Accuracy  ::  0.9714285714285714
+Classification Report:
+               precision    recall  f1-score   support
+
+           2       0.97      0.99      0.98       137
+           4       0.97      0.95      0.96        73
+
+    accuracy                           0.97       210
+   macro avg       0.97      0.97      0.97       210
+weighted avg       0.97      0.97      0.97       210
+
+Confusion Matrix:
+ [[135   2]
+ [  4  69]]
+Model saved to bc_rf_pipeline.joblib
+Model loaded from bc_rf_pipeline.joblib
+Loaded model prediction for first test sample: 2
+
+
+ Visualizations
+ • Feature Importance (Random Forest)
+ • Confusion Matrix with Matplotlib
+
+ Model Storage
+ • Model is saved as bc_rf_pipeline.joblib
+ • Can be loaded anytime for prediction without retraining:
+ from breast_cancer_pipeline import load_model
+ model = load_model("bc_rf_pipeline.joblib")
+ Sample Prediction
+ sample = test_x.iloc[[0]]
+ pred = model.predict(sample)
+ print("Prediction:", pred[0])  # 2 (Benign) or 4 (Malignant)
+
+ Author
+
+ Krishna Kapure
+
+  Date: 09/08/2025
