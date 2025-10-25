@@ -1,0 +1,80 @@
+Core Dependencies (Used in Your Code)
+
+1. pandas
+Version: >=1.3.0
+
+Purpose: Reading and processing tabular data (CSV), handling missing values, working with DataFrames.
+
+Used in:
+
+pd.read_csv()
+
+Data cleaning, exploration, and preparation.
+
+2. numpy
+Version: >=1.21.0
+
+Purpose: Numerical computing, especially with arrays and NaN values.
+
+Used in:
+
+np.nan, np.array, math operations during preprocessing.
+
+3. matplotlib
+Version: >=3.4.0
+
+Purpose: Basic plotting library.
+
+Used in:
+
+Plotting ROC curve (plt.plot()).
+
+Saving and displaying visualizations (plt.savefig(), plt.show()).
+
+4. seaborn
+Version: >=0.11.0
+
+Purpose: Advanced data visualizations (built on top of matplotlib).
+
+Used in:
+
+Creating feature importance plots (sns.barplot()).
+
+Easy styling for plots.
+
+5. scikit-learn
+Version: >=0.24.0
+
+Purpose: Core ML framework — used for preprocessing, training, testing, and evaluating.
+
+Used for:
+
+Models: LogisticRegression, RandomForestClassifier, SVC
+
+Preprocessing: StandardScaler, SimpleImputer, train_test_split
+
+Evaluation: accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, classification_report
+
+ROC curve: roc_curve()
+
+6. joblib
+Version: >=1.0.0
+
+Purpose: Saving and loading trained models and scalers.
+
+Used in:
+
+joblib.dump() to save model and scaler
+
+joblib.load() to load in GUI
+
+7. tkinter
+Version: built-in
+
+Purpose: Create the desktop user interface (GUI).
+
+Used in:
+
+Building a form for user input (entries for glucose, BMI, etc.)
+
+Displaying results using messagebox
